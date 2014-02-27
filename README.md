@@ -1,6 +1,6 @@
 # Skra::Geo
 
-Skra::Geo is a thin ruby wrapper to query WFS API of the [Icelandinc National Registry](http://www.skra.is) Geoserver.
+Skra::Geo is a thin ruby wrapper to query WFS API of the [Icelandic National Registry](http://www.skra.is) Geoserver.
 Its main goal is to provide easy access to geo information of every parcel in Iceland, thus making trivial the implementation
 of features like geolocation.
 
