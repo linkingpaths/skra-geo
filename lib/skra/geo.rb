@@ -20,28 +20,24 @@ module Skra
       get_features(filter, options)
     end
 
+    def self.heinum(id, options={})
+      get_features([{:name => :HEINUM, :value => id}], options)
+    end
 
-    def self.id(id, options={})
+    def self.landnr(id, options={})
       get_features([{:name => :LANDNR, :value => id}], options)
     end
 
     def self.street(name, number=nil, postcode=nil, options={})
+      property = options.delete(:dative) ? :HEITI_TGF : :HEITI_NF
       filter = [
-        {:name => :HEITI_NF, :value => name}
+        {:name => property, :value => name}
       ]
       filter << {:name => :HUSNR,  :value => number}   if number
       filter << {:name => :POSTNR, :value => postcode} if postcode
       get_features(filter, options)
     end
 
-    def self.dative_street(dative_name, number=nil, postcode=nil, options={})
-      filter = [
-        {:name => :HEITI_TGF, :value => dative_name}
-      ]
-      filter << {:name => :HUSNR,  :value => number}   if number
-      filter << {:name => :POSTNR, :value => postcode} if postcode
-      get_features(filter, options)
-    end
 
     protected
 
@@ -49,7 +45,7 @@ module Skra
       query  = defaults.merge(options)
       wfs_filter = build_wfs_filter(filter)
       response = post('/geoserver/wfs', { :query => query.merge(wfs_filter) })
-      response["features"]
+      query[:outputformat] == 'json' ? response["features"] : response
     end
 
     def self.build_wfs_filter(properties=[])
