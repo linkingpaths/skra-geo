@@ -7,10 +7,9 @@ Gem::Specification.new do |spec|
   spec.name          = "skra-geo"
   spec.version       = Skra::Geo::VERSION
   spec.authors       = ["Aitor García"]
-  spec.email         = ["hello@aitor.is"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.email         = ["aitor@linkingpaths.com"]
+  spec.summary       = %q{Skra::Geo is a thin ruby wrapper to query WFS API of the [Icelandic National Registry](http://www.skra.is) Geoserver.}
+  spec.homepage      = "https://github.com/linkingpaths/skra-geo"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
