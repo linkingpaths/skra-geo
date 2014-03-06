@@ -96,7 +96,7 @@ A feature returned by the server will have the following structure:
 ]
 ```
 
-Geometry coordinates are returned in [ISNET93](https://is.wikipedia.org/wiki/ISNET93) and they usually need conversion to something more standard (like [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System)) to be used.
+Geometry coordinates are returned in [ISNET93](https://is.wikipedia.org/wiki/ISNET93) and they usually need conversion to something more standard (like [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System)) to be used. You can use our [isnet93](https://github.com/linkingpaths/isnet93) to easily convert these coordinates.
 
 ## Contributing
 
