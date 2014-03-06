@@ -108,4 +108,4 @@ Geometry coordinates are returned in [ISNET93](https://is.wikipedia.org/wiki/ISN
 
 ## Kudos
 
-This library was extracted from the work made by [Linking Paths](http://www.linkingpaths.com) during the first hackathon organized by [Open Knowledge Foundation Iceland](https://www.facebook.com/OKFNis). Documentation on the actual functionaly of the server was researched from [geoserver.org](http://docs.geoserver.org/stable/en/user/services/wfs/reference.html#operations) and previous work on the python library [fasteignamat-functions](https://github.com/pallih/fasteignamat-functions) was checked as reference.
+This library was extracted from the work made by [Linking Paths](http://www.linkingpaths.com) during the first hackathon organized by [Open Knowledge Foundation Iceland](https://www.facebook.com/OKFNis). Documentation on the actual functionality of the server was researched from [geoserver.org](http://docs.geoserver.org/stable/en/user/services/wfs/reference.html#operations) and previous work on the python library [fasteignamat-functions](https://github.com/pallih/fasteignamat-functions) was checked as reference.
