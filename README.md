@@ -49,7 +49,6 @@ Althought landnr (Parcel ID) is one the most usual ids for querying the server, 
 ```ruby
 >> Skra::Geo.query([{:name => :POSTNR, :value => 101}]) # All features in postcode 101
 ```
-
 ## Data
 
 A feature returned by the server will have the following structure:
